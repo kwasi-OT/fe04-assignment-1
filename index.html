@@ -13,17 +13,33 @@
             margin: auto;        
         }
 
+        header h1 {
+            display: flex;
+            justify-content: center;
+        }
+
         h1 {
             color: brown;
 
         }
 
-        nav * {
-            display: flex;
-            display: inline;
-            padding: 0.5em;
-            align-items: flex-end;
+        header ul {
+            padding: 0;
+            margin: 0;
             list-style-type: none;
+            overflow: hidden;
+        }
+
+        header li {
+            float: right;
+            border-left: 1px solid gray;
+        }
+
+        header li a {
+            display: block;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
         }
 
         .footer {
@@ -33,6 +49,15 @@
             height: 200px;
             margin: auto;
             color: white;
+        }
+
+        footer ul {
+            list-style-type: none;
+        }
+
+        footer p {
+            display: flex;
+            justify-content: center;
         }
 
         .main {
@@ -88,9 +113,9 @@
         <h1>My Website</h1>
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Home</a></li>
             </ul>
         </nav>
     </header>
